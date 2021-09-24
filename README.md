@@ -1,0 +1,2 @@
+# Chequeador
+Odoo Moanickel project
