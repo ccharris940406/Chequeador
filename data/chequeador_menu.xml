@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="chequeador_camion_action" model="ir.actions.act_window">
+        <field name="name">Gestionar camion</field>
+        <field name="res_model">fleet.vehicle</field>
+        <field name="view_mode">tree,form</field>
+    </record>   
+
+    <record id="chequeador_camion_modelo_action" model="ir.actions.act_window">
+        <field name="name">Gestionar modelos</field>
+        <field name="res_model">fleet.vehicle.model</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <record id="chequeador_destino_tipo_action" model="ir.actions.act_window">
+        <field name="name">Gestionar tipos</field>
+        <field name="res_model">chequeador.destino.tipo</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <record id="chequeador_destino_action" model="ir.actions.act_window">
+        <field name="name">Gestionar destinos</field>
+        <field name="res_model">chequeador.destino</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <record id="chequeador_origen_action" model="ir.actions.act_window">
+        <field name="name">Gestionar origen</field>
+        <field name="res_model">chequeador.origen</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <record id="chequeador_minerales_action" model="ir.actions.act_window">
+        <field name="name">Gestionar minerales</field>
+        <field name="res_model">chequeador.minerales</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+    
+    <menuitem id="chequeador_menu" name="Chequeador">
+        <menuitem id="chequeador_camion_menu" name="Camion">
+            <menuitem id="chequeador_camion_action_menu" action="chequeador_camion_action"/>
+            <menuitem id="chequeador_camion_modelo_action_menu" action="chequeador_camion_modelo_action"/>
+        </menuitem>
+        <menuitem id="chequeador_destino_menu" name="Destino">
+            <menuitem id="chequeador_destino_action_menu" action="chequeador_destino_action"/>
+            <menuitem id="chequeador_destino_tipo_action_menu" action="chequeador_destino_tipo_action"/>
+        </menuitem>
+        <menuitem id="chequeador_origen_menu" name="Origen">
+            <menuitem id="chequeador_origen_action_menu" action="chequeador_origen_action"/>
+            <menuitem id="chequeador_minerales_action_menu" action="chequeador_minerales_action"/>
+        </menuitem>
+    </menuitem>     
+</odoo>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="chequeador_origen_view_tree" model="ir.ui.view">
+        <field name="name">chequeador.origen.view.tree</field>
+        <field name="model">chequeador.origen</field>
+        <field name="arch" type="xml">
+            <tree string="Origen" >
+                <field name="name"/>
+                <field name="tiempo_ciclo"/> 
+                <field name="mineral" />   
+            </tree>
+        </field>
+    </record> 
+
+</odoo>

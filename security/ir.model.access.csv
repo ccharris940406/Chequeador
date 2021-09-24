@@ -1,0 +1,5 @@
+id,name,model_id/id,group_id/id,perm_read,perm_write,perm_create,perm_unlink
+access_chequeador_destino_tipo,access_chequeador_destino_tipo,model_chequeador_destino_tipo,base.group_user,1,1,1,1
+access_chequeador_destino,access_chequeador_destino,model_chequeador_destino,base.group_user,1,1,1,1
+access_chequeador_origen,access_chequeador_origen,model_chequeador_origen,base.group_user,1,1,1,1
+access_chequeador_minerales,access_chequeador_minerales,model_chequeador_minerales,base.group_user,1,1,1,1

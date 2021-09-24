@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="chequeador_camion_modelo_view_form_inherit" model="ir.ui.view">
+        <field name="name">chequeador.camion.modelo.view.form.inherit</field>
+        <field name="model">fleet.vehicle.model</field>
+        <field name="inherit_id" ref="fleet.fleet_vehicle_model_view_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="/form/sheet/notebook[1]" position="attributes">
+                <attribute name="invisible">True</attribute>
+            </xpath>
+            <xpath expr="/form/sheet/group/group[1]" position="attributes">
+                <attribute name="invisible">True</attribute>
+            </xpath>
+            <xpath expr="//field[@name='brand_id']" position="after">
+                <field name="capacidad" />
+            </xpath>
+        </field>
+    </record>
+
+    <record id="chequeador_camion_modelo_view_tree_inherit" model="ir.ui.view">
+        <field name="name">chequeador.camion.modelo.view.tree.inherit</field>
+        <field name="model">fleet.vehicle.model</field>
+        <field name="inherit_id" ref="fleet.fleet_vehicle_model_view_tree"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='vehicle_type']" position="attributes">
+                <attribute name="invisible">True</attribute>
+            </xpath>
+            <field name="vehicle_type" position="after">
+                <field name="capacidad" />
+            </field>
+        </field>
+    </record>
+
+</odoo>

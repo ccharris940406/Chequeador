@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="chequeador_destino_view_tree" model="ir.ui.view">
+        <field name="name">chequeador.destino.view.tree</field>
+        <field name="model">chequeador.destino</field>
+        <field name="arch" type="xml">
+            <tree string="Destino" >
+                <field name="name"/>
+                <field name="tipoDestino"/>    
+            </tree>
+        </field>
+    </record> 
+
+</odoo>
